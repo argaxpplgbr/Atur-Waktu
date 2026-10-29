@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StudyFlow · Focus Timer</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="app">
+  <header class="top"><a class="brand" href="#"><span class="logo"><b>C#</b><i>×</i><strong>Py</strong></span><span>studyflow<small>FOCUS STUDIO</small></span></a><div class="stack"><span class="dot purple"></span>.NET 10 <span class="slash">/</span><span class="dot blue"></span> Python 3.14</div></header>
+  <section class="intro"><div><span class="kicker">YOUR SPACE TO FOCUS <b>✳</b></span><h1>Make time<br><em>for what matters.</em></h1><p>Atur ritme belajar yang cocok untukmu. Satu sesi fokus pada satu waktu.</p></div><div class="date-card"><span>STUDY MODE</span><b>ON <i>✦</i></b><small>One step at a time</small></div></section>
+  <div class="layout"><section class="card setup"><div class="section-title"><div><span class="num">01</span><h2>Rencanakan sesi</h2></div><span class="tiny">PERSONALIZED</span></div>
+    <form id="study-form"><label>Mata pelajaran<input name="subject" type="text" maxlength="40" placeholder="Contoh: C# — OOP" value="Belajar C#" required></label>
+      <label>Waktu yang tersedia <span class="unit">MENIT</span><input name="availableMinutes" type="number" min="10" max="180" value="60" required></label>
+      <div class="range-row"><label for="energy">Energi hari ini <output id="energy-value">3</output></label><input id="energy" name="energyLevel" type="range" min="1" max="5" value="3"><div class="range-hints"><span>Pelan</span><span>Penuh energi</span></div></div>
+      <div class="range-row"><label for="distraction">Potensi gangguan <output id="distraction-value">2</output></label><input id="distraction" name="distractionLevel" type="range" min="1" max="5" value="2"><div class="range-hints"><span>Tenang</span><span>Banyak gangguan</span></div></div>
+      <button id="recommend" class="primary" type="submit"><span>✧</span> Buat sesi fokus <b>↗</b></button>
+    </form><p id="error" class="error" hidden></p>
+  </section>
+  <section class="card timer-card"><div class="section-title"><div><span class="num">02</span><h2>Timer fokus</h2></div><span class="live"><i></i> READY</span></div>
+    <div class="timer-wrap"><div class="timer-ring"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="track" cx="120" cy="120" r="104"/><circle id="progress" class="progress" cx="120" cy="120" r="104"/></svg><div class="time"><small id="phase">SESI FOKUS</small><strong id="clock">25:00</strong><span id="subject-display">Belajar C#</span></div></div></div>
+    <div id="recommendation" class="recommendation"><span class="spark">✦</span><p><b>Mulai dengan rekomendasi</b><small>Isi rencana sesi untuk mendapat durasi fokus.</small></p></div>
+    <div class="timer-actions"><button id="start" class="start" disabled>Mulai fokus <span>▶</span></button><button id="reset" class="reset" title="Reset timer">↺</button></div>
+    <p class="model-note">POWERED BY <span class="tag-cs">C#</span> API + <span class="tag-py">PYTHON</span> ML</p>
+  </section></div>
+  <footer><span>STUDYFLOW</span><span>Rekomendasi model adalah demo, dengarkan kebutuhan dirimu sendiri.</span></footer>
+</main><script src="app.js"></script></body></html>
