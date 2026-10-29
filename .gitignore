@@ -1,0 +1,17 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Rahasia atau konfigurasi lokal
+.env
+.env.*
+
+# .NET
+bin/
+obj/
+
+# VS Code, opsional
+.vscode/
