@@ -15,3 +15,9 @@ __pycache__/
 
 # VS Code, opsional
 .vscode/
+
+**/bin/
+**/obj/
+**/__pycache__/
+**/.venv/
+
